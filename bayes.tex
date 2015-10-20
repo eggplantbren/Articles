@@ -33,11 +33,12 @@ but nobody would want to stop scientific results being reported. We all want
 the best and most important science to filter through to the general public.
 
 Yet it is unavoidable that there will always be
-published research which contains misleading or incorrect conclusions.
+research which contains misleading or incorrect conclusions.
 There are many ways this can happen. Research is difficult\footnote{As my
 PhD supervisor used to say, {\em if it were easy they'd be doing it at UNSW},
 a joke at the expense of a rival university.}, and sometimes
-people simply make mistakes.
+people simply make mistakes, or do experiments that aren't as well designed as
+they could have been.
 Scientists can be consciously or
 unconsciously motivated to reach a certain desired conclusion.
 Or a well-performed experiment might yield
@@ -69,12 +70,13 @@ the degree to which a dataset provides evidence in favour of one theory over
 another, we will end up with a clearer picture of what is known about the
 world. The papers we write will be able to communicate more clearly the
 appropriate amount of confidence or doubt associated with its conclusions.
-Statistics, and its newer sibling data science\footnote{My favourite
+The discipline of
+statistics, and its newer sibling data science\footnote{My favourite
 humourous definitions of data science are
 {\em statistics done in San Francisco}, and {\em statistics done on a Mac}.
 More seriously, Data Science consists of the overlap between statistics and
 computer science.},
-are broad and encompass many different endeavours. For example, some researchers
+is broad and encompasses many different endeavours. For example, some researchers
 work on developing practical software tools for analysing and visualising large and
 complicated data sets, while others try to prove theorems about the mathematics
 of probability. Many of us also collaborate with applied scientists and find
@@ -94,12 +96,13 @@ we are perceived by the wider science community as authorities
 in quantifying the strength of evidence. What outsiders may not realise is
 that most statisticians frequently use, promote, and teach methods that are
 obsolete, often illogical, unnecessarily confusing, and disconnected from the
-needs of scientists.
+needs of scientists. This has occurred because some fierce debates about the
+nature of the concept of ``probability'' caused a rift in statistical thinking
+in the 20th century. The methods of a single side of this debate became the
+de-facto standard version of statistics and has been baked into undergraduate
+teaching and the requirements of prestigious journals.
 
-Undergraduate statistics classes are dominated by the ``frequentist'' view
-of probability, which arose in the early 20th century due to concerns about the
-alternative view, which we now call ``Bayesian'', although it was not known as
-such at the time. Probability is a set of mathematical rules relating some
+Probability is a set of mathematical rules relating some
 numbers to other numbers. This much is uncontroversial, but things get more
 tricky when we decide to apply probability equations to things in the real
 world. Everyone acknowledges that the equations of probability can be applied
@@ -109,7 +112,10 @@ The proportion of people who bicycle to work {\em and} are male is
 $0.3 \times 0.5 = 0.15$ or 15$\%$. Here I used the {\em product rule} of
 probabilities, and also an assumption of independence, which is empirical.
 It may or may not hold in reality, and we could count people in Copenhagen if
-we wanted to verify my calculation.
+we wanted to verify my calculation. To a frequentist, the mathematical notion
+of probability can be applied to real world problems when we can find some
+big set of things and ask questions about what fraction of that set has a
+certain property.
 
 
 %While
