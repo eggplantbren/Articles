@@ -161,9 +161,16 @@ experiment, with perhaps a million patients in each group.
 
 In the Bayesian approach we are interested in a large set of hypotheses about
 what the values of $e_1$ and $e_2$ might be. It's possible that $e_1=0.01$ and
-$e_2 = 0.99$, i.e. that the new drug is vastly superior. Another, more plausible
-possibility is that $e_1 = 0.65$ and $e_2=0.68$, i.e. that both drugs are
-somewhat effective and drug two is slightly moreso.
+$e_2 = 0.99$, i.e. that the new drug is amazing and the old one is terrible.
+Another, more plausible possibility is that $e_1 = 0.65$ and $e_2=0.68$, i.e.
+that both drugs are somewhat effective and drug two is slightly moreso. If we
+consider $e_1$ and $e_2$ to two decimal places, then the total number of
+possibilities is $101 \times 101 = 10201$. Some of these possibilities are
+quite plausible and others are not. We assign a number (a probability) to each
+possibility, and the sum of all of these probabilities must be 1. A simple and
+common assumption is to assign a probability of $1/10201$ to each. Collectively,
+the probabilities we choose to assign are known as the {\em prior distribution}.
+
 
 %While
 %it is impossible to be perfect at it, we should try to do the best
