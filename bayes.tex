@@ -165,11 +165,18 @@ $e_2 = 0.99$, i.e. that the new drug is amazing and the old one is terrible.
 Another, more plausible possibility is that $e_1 = 0.65$ and $e_2=0.68$, i.e.
 that both drugs are somewhat effective and drug two is slightly moreso. If we
 consider $e_1$ and $e_2$ to two decimal places, then the total number of
-possibilities is $101 \times 101 = 10201$. Some of these possibilities are
+possible values for each drug is 101 (if we include both 0.00 and 1.00 as
+possibilities) is $101 \times 101 = 10201$.
+Some of these possibilities are
 quite plausible and others are not. We assign a number (a probability) to each
 possibility, and the sum of all of these probabilities must be 1. A simple and
-common assumption is to assign a probability of $1/10201$ to each. Collectively,
-the probabilities we choose to assign are known as the {\em prior distribution}.
+common default assumption is to assign a probability of $1/10201$ to each.
+This is often a good enough assumption to get started, but if we want to put
+more thought into it, we could choose something else, perhaps to reflect the
+idea, discussed above, that it's plausible both drugs are moderately effective
+and that there isn't a huge difference between them.
+The technical name for the collection of
+probabilities we choose to assign is the {\em prior distribution}.
 
 
 %While
