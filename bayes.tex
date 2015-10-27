@@ -190,26 +190,20 @@ Since the resulting probabilities will no longer add up to a total of 1, they
 must be re-scaled so that they do.
 Quite literally, those hypotheses that predicted the observed data well have
 their probabilities increased, while those that did not become less
-plausible. 
-
+plausible.
 There is an even simpler, but less widely known,
 way of viewing the Bayesian updating procedure. It is equivalent to listing
 all hypotheses you're considering, assigning a prior probability to each, and
 deleting those which you've learned are false. The final step is to scale the
 posterior probabilities to make sure the total is 1.
 
-
-
-
-%While
-%it is impossible to be perfect at it, we should try to do the best
-%we can.  If a new medical treatments yields 60
-%recoveries out of 100 patients in a clinical trial, yet 45 out of 100 patients
-%in the placebo group recover, how certain should we be that the drug really works?
-
-
-
-%The problem is that most statisticians are wrong about how to do inference.
+It is hard to imagine a simpler foundation for inference than that. Thankfully,
+we don't need to: there are many arguments supporting the notion that this is
+the only logically consistent way to make a mathematical model of uncertainty.
+In practice, the results Bayesians get are literal answers to the question
+``how confident should I be in this theory, as opposed to that one?''. All
+disagreements are reduced to the question of what hypotheses we're talking
+about, and what their prior probabilities are.
 
 %Frequentist methods try to be right most of the time, whereas Bayesian methods
 %try to honestly represent uncertainty every single time. Both of these seem
