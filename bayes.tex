@@ -144,8 +144,8 @@ efficacy and is being compared to an old drug.
 of which take the new drug, and 100 of which take the old drug. Since neither
 drug is perfect, and drugs do not have exactly the same effect on everybody,
 the exact number of people who in each group who recover is unpredictable.
-Suppose 80 patients on the new drug are successfully treated, compared to
-70 on the old drug. Based on this evidence, how sure can we be that the new
+Suppose 70 patients on the old drug are successfully treated, compared to
+80 on the new drug. Based on this evidence, how sure can we be that the new
 drug is better, and if so, by how much?
 
 To make matters more explicit, we have to list all of the possible answers
@@ -177,6 +177,28 @@ idea, discussed above, that it's plausible both drugs are moderately effective
 and that there isn't a huge difference between them.
 The technical name for the collection of
 probabilities we choose to assign is the {\em prior distribution}.
+
+With the data in hand (70/100 recoveries for the old drug and 80/100 for the
+new), we can revise our probabilities. The usual terminology is that the
+prior distribution will be replaced by the {\em posterior distribution}, which
+is a collection of probabilities describing how plausible each hypothesis
+(about the values of $e_1$ and $e_2$) is, taking into account the data.
+The posterior probabilities are calculated by multiplying the prior probabilities
+by so-called ``likelihoods'', one for each hypothesis,
+which describe how likely our data would have been if the hypothesis were true.
+Since the resulting probabilities will no longer add up to a total of 1, they
+must be re-scaled so that they do.
+Quite literally, those hypotheses that predicted the observed data well have
+their probabilities increased, while those that did not become less
+plausible. 
+
+There is an even simpler, but less widely known,
+way of viewing the Bayesian updating procedure. It is equivalent to listing
+all hypotheses you're considering, assigning a prior probability to each, and
+deleting those which you've learned are false. The final step is to scale the
+posterior probabilities to make sure the total is 1.
+
+
 
 
 %While
