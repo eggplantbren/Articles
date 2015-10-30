@@ -125,13 +125,13 @@ probabilities was the main objection which led to the rise of frequentism in
 the 20th century. I understand why people thought that science should stick
 to more concrete, measurable ideas such as proportions, and not bother trying
 to mathematise a vague notion like ``plausibility''.
-
 Yet what happens if we relax our fears, and simply start using the Bayesian
 framework? We end up with a mathematical theory which allows us to clearly
 understand how ideal reasoning should behave when uncertainty is present. If we
 are in a situation of uncertainty, and want to do the best we can, using the
 rules of probability will ensure we meet bare minimum standards of rationality.
 Many frequentist methods violate these standards.
+
 For example, imagine a clinical trial where a new drug is being tested for
 efficacy and is being compared to an old drug.
 200 patients are recruited for the trial, 100
@@ -141,7 +141,6 @@ the exact number of people who in each group who recover is unpredictable.
 Suppose 70 patients on the old drug are successfully treated, compared to
 80 on the new drug. Based on this evidence, how sure can we be that the new
 drug is better, and if so, by how much?
-
 To make matters more explicit, we have to list all of the possible answers
 we are considering to our question. Since we're talking about how effective
 two drugs are, we can think of each drug having a number associated with it
@@ -160,7 +159,7 @@ Another, more plausible possibility is that $e_1 = 0.65$ and $e_2=0.68$, i.e.
 that both drugs are somewhat effective and drug two is slightly moreso. If we
 consider $e_1$ and $e_2$ to two decimal places, then the total number of
 possible values for each drug is 101 (if we include both 0.00 and 1.00 as
-possibilities) is $101 \times 101 = 10201$.
+possibilities) is $101 \times 101$, or $10201$.
 Some of these possibilities are
 quite plausible and others are not. We assign a number (a probability) to each
 possibility, and the sum of all of these probabilities must be 1. A simple and
@@ -173,18 +172,17 @@ The technical name for the collection of
 probabilities we choose to assign is the {\em prior distribution}.
 
 With the data in hand (70/100 recoveries for the old drug and 80/100 for the
-new), we can revise our probabilities. The usual terminology is that the
-prior distribution will be replaced by the {\em posterior distribution}, which
+new), we can revise our probabilities. We usually say that the
+prior distribution gets replaced by the {\em posterior distribution}, which
 is a collection of probabilities describing how plausible each hypothesis
 (about the values of $e_1$ and $e_2$) is, taking into account the data.
-The posterior probabilities are calculated by multiplying the prior probabilities
+The posterior distribution is calculated by multiplying the prior probabilities
 by so-called ``likelihoods'', one for each hypothesis,
 which describe how likely our data would have been if the hypothesis were true.
-Since the resulting probabilities will no longer add up to a total of 1, they
+Since the resulting probabilities will no longer add up to 1, they
 must be re-scaled so that they do.
-Quite literally, those hypotheses that predicted the observed data well have
-their probabilities increased, while those that did not become less
-plausible.
+Quite literally, those hypotheses that {\it predict the observed data well}
+become more plausible, and those that don't become less plausible.
 There is an even simpler, but less widely known,
 way of viewing the Bayesian updating procedure. It is equivalent to listing
 all hypotheses you're considering, assigning a prior probability to each, and
@@ -192,12 +190,15 @@ deleting those which you've learned are false. The final step is to scale the
 posterior probabilities to make sure the total is 1.
 
 It is hard to imagine a simpler foundation for inference than that. Thankfully,
-we don't need to: there are many arguments supporting the notion that this is
+we don't have to: there are many compelling arguments suggesting this is
 the only logically consistent way to make a mathematical model of uncertainty.
 In practice, the results Bayesians get are literal answers to the question
 ``how confident should I be in this theory, as opposed to that one?''. All
 disagreements are reduced to the question of what hypotheses we're talking
-about, and what their prior probabilities are.
+about, and what their prior probabilities should be.
+Yet this is not what you will learn if you decide to study statistics. As an
+undergraduate student studying physics, applied mathematics, and statistics,
+I had a grand total of two weeks exposure to Bayesian inference.
 
 %Frequentist methods try to be right most of the time, whereas Bayesian methods
 %try to honestly represent uncertainty every single time. Both of these seem
@@ -209,6 +210,13 @@ about, and what their prior probabilities are.
 %consider the common critique of mainstream medicine which states that it
 %doesn't treat patients as individuals.
 
+
+The tone of my comments here has been stronger that you usually see in the
+21st century. Having a strong opinion on the matter has gone out of fashion,
+with the dominant culture being live-and-let-live (less flatteringly,
+relativist) pragmatism. Wishing to discuss foundational issues or to criticise
+a colleague for centering their research program around p-values will lead to
+being called a religious zealot or crusader.
 
 %Mention being called a zealot and being on a religious crusade.
 %Legit points: Bayesian moral community exists. But that doesn't mean we're
