@@ -139,8 +139,9 @@ of real trials under the rug and focus purely on the inference question.
 100 patients are recruited for the trial and take the new drug. Since
 drugs do not have exactly the same effect on everybody,
 the exact number of people who recover is unpredictable.
-At the end of the trial, the results are in: 82 out of the 100 patients
-recovered. Based on this evidence, how sure can we be that the new
+At the end of the trial, the results are in: 76 out of the 100 patients
+recovered. 76 is more than the 70 we'd expect based on the old drug.
+Based on this evidence, how sure can we be that the new
 drug is better, and if so, by how much?
 Was this result a fluke?
 
@@ -178,7 +179,7 @@ miraculous, and it's plausible that it's similar to the old one.
 The technical name for the collection of
 probabilities we choose to assign is the {\em prior distribution}.
 
-With the data in hand (82 recoveries out of 100 patients), we can revise our probabilities. We usually say that the
+With the data in hand (76 recoveries out of 100 patients), we can revise our probabilities. We usually say that the
 prior distribution gets replaced by the {\em posterior distribution}, which
 is a collection of probabilities describing how plausible each hypothesis
 (about the values of $e$) is, taking into account the data.
@@ -206,6 +207,12 @@ Yet this is not what you will learn if you decide to study statistics. As an
 undergraduate student studying physics, applied mathematics, and statistics,
 I had a grand total of two weeks exposure to Bayesian inference.
 
+What do we get when we apply this technique? Using the `default' assumption of
+uniform prior probabilities, the probability the new drug is better than the
+old one, given the data, is 91.6\%.
+
+% Cauchy(location=0.7, scale=0.05) prior ==> 86.9% posterior probability
+
 
 For a frequentist, the probability of a hypothesis is a nonsensical concept.
 
@@ -221,7 +228,7 @@ For a frequentist, the probability of a hypothesis is a nonsensical concept.
 
 
 The tone of my comments here has been stronger that you usually see in the
-21st century. Having a strong opinion on the matter has gone out of fashion,
+21st century. Having a strong opinion on this matter has gone out of fashion,
 with the dominant culture being live-and-let-live (less flatteringly,
 relativist) pragmatism. Who's to say one statistical philosophy is better than
 another? Aren't they all {\it equally valid} paths to good data analysis?
