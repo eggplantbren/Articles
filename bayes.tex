@@ -133,24 +133,30 @@ rules of probability will ensure we meet bare minimum standards of rationality.
 Many frequentist methods violate these standards.
 
 For example, imagine a clinical trial where a new drug is being tested for
-efficacy and is being compared to an old drug.
-200 patients are recruited for the trial, 100
-of which take the new drug, and 100 of which take the old drug. Since neither
-drug is perfect, and drugs do not have exactly the same effect on everybody,
-the exact number of people who in each group who recover is unpredictable.
-Suppose 70 patients on the old drug are successfully treated, compared to
-80 on the new drug. Based on this evidence, how sure can we be that the new
+efficacy and is being compared to an old drug which is known to lead to
+recovery in 70\% of patients who take it. Let's sweep all of the complications
+of real trials under the rug and focus purely on the inference question.
+100 patients are recruited for the trial and take the new drug. Since
+drugs do not have exactly the same effect on everybody,
+the exact number of people who recover is unpredictable.
+At the end of the trial, the results are in: 82 out of the 100 patients
+recovered. Based on this evidence, how sure can we be that the new
 drug is better, and if so, by how much?
-To make matters more explicit, we have to list all of the possible answers
-we are considering to our question. Since we're talking about how effective
-two drugs are, we can think of each drug having a number associated with it
-which defines its effectiveness. Let's call the effectiveness of the first drug
-$e_1$ and the effectiveness of the second drug $e_2$. Then our question boils
-down to {\em what are the values of $e_1$ and $e_2$?} If we could answer that,
-we could answer the broader question of whether $e_2$ is greater than $e_1$ and
-if so, by how much. We usually think of these quantities by imagining what
+Was this result a fluke?
+
+It's conceivable that the new drug is better, worse, or equally as effective as
+the old one. Actually, we can be much more fine grained than that.
+Since we're talking about how effective
+a drugs is, we can think of the drug having a number associated with it
+which defines its effectiveness. Let's call the effectiveness of the drug
+$e$. Then our question boils
+down to {\em what is the value of $e$, and how does it compare to the value
+of and $e_{\rm old}$ for the old drug?} If we could answer that,
+we could answer the broader question of whether $e$ is greater than
+$e_{\rm old}$ and if so, by how much. We usually think of these quantities by imagining what
 fraction of patients would recover if we had a much larger version of the
-experiment, with perhaps a million patients in each group.
+experiment, with perhaps a million patients in each group, so the effectiveness
+of the old drug is $e_{\rm old} = 0.7$.
 
 In the Bayesian approach we are interested in a large set of hypotheses about
 what the values of $e_1$ and $e_2$ might be. It's possible that $e_1=0.01$ and
