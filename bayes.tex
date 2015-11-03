@@ -158,32 +158,32 @@ fraction of patients would recover if we had a much larger version of the
 experiment, with perhaps a million patients in each group, so the effectiveness
 of the old drug is $e_{\rm old} = 0.7$.
 
-In the Bayesian approach we are interested in a large set of hypotheses about
-what the values of $e_1$ and $e_2$ might be. It's possible that $e_1=0.01$ and
-$e_2 = 0.99$, i.e. that the new drug is amazing and the old one is terrible.
-Another, more plausible possibility is that $e_1 = 0.65$ and $e_2=0.68$, i.e.
-that both drugs are somewhat effective and drug two is slightly moreso. If we
-consider $e_1$ and $e_2$ to two decimal places, then the total number of
-possible values for each drug is 101 (if we include both 0.00 and 1.00 as
-possibilities) is $101 \times 101$, or $10201$.
-Some of these possibilities are
+In the Bayesian approach we explicitly consider a large set of hypotheses about
+what the value of $e$ might be. It's possible that $e=0.01$, i.e. that the new
+drug is terrible and would only lead 1\% of patients to recover.
+Another, more plausible possibility is that $e = 0.73$, i.e.
+that the new drug is slightly more effective than the old one. If we
+consider $e$ to two decimal places, then the total number of
+possible values 101 (this includes both 0.00 and 1.00 as
+possibilities).
+Some of these possible values of $e$ are
 quite plausible and others are not. We assign a number (a probability) to each
 possibility, and the sum of all of these probabilities must be 1. A simple and
-common default assumption is to assign a probability of $1/10201$ to each.
+common default assumption is to assign the same probability to each
+(which must therefore be $1/101$ since there are 101 of them).
 This is often a good enough assumption to get started, but if we want to put
 more thought into it, we could choose something else, perhaps to reflect the
-idea, discussed above, that it's plausible both drugs are moderately effective
-and that there isn't a huge difference between them.
+idea, discussed above, that it's unlikely that the new drug is terrible or
+miraculous, and it's plausible that it's similar to the old one.
 The technical name for the collection of
 probabilities we choose to assign is the {\em prior distribution}.
 
-With the data in hand (70/100 recoveries for the old drug and 80/100 for the
-new), we can revise our probabilities. We usually say that the
+With the data in hand (82 recoveries out of 100 patients), we can revise our probabilities. We usually say that the
 prior distribution gets replaced by the {\em posterior distribution}, which
 is a collection of probabilities describing how plausible each hypothesis
-(about the values of $e_1$ and $e_2$) is, taking into account the data.
+(about the values of $e$) is, taking into account the data.
 The posterior distribution is calculated by multiplying the prior probabilities
-by so-called ``likelihoods'', one for each hypothesis,
+by so-called `likelihoods', one for each hypothesis,
 which describe how likely our data would have been if the hypothesis were true.
 Since the resulting probabilities will no longer add up to 1, they
 must be re-scaled so that they do.
@@ -206,7 +206,6 @@ Yet this is not what you will learn if you decide to study statistics. As an
 undergraduate student studying physics, applied mathematics, and statistics,
 I had a grand total of two weeks exposure to Bayesian inference.
 
-\
 
 For a frequentist, the probability of a hypothesis is a nonsensical concept.
 
