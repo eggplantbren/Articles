@@ -1,6 +1,6 @@
 \documentclass[a4paper, 12pt]{article}
 \usepackage{graphicx}
-\usepackage{natbib}
+\usepackage[numbers]{natbib}
 \usepackage{amsmath}
 \usepackage{parskip}
 \usepackage{dsfont}
@@ -32,6 +32,36 @@ were better. Unfortunately, the wrong side won the debate and their
 ideas still dominate mainstream statistics, a situation which
 has exacerbated the reproducibility crises affecting science today.
 
+Here's a common, standard statistical inference problem. An old drug
+successfully treats 70\% of patients. To test a new drug, researchers give it
+to 100 patients, of whom 76 recover. Based on this evidence, how certain
+should we be that the new drug is worse than, identical to, or better than the
+old one?
+
+
+The standard p-value threshold is 0.05. This simply {\em feels} more
+convincing than 
+
+Things have improved markedly for Bayesian statisticians over the last few
+decades. These days, you're unlikely to encounter any hostility by doing
+a Bayesian analysis. By far the dominant attitude these days
+is pragmatism. It's possible to do interesting and useful analyses using tools
+arising from frequentist thinking, Bayesian thinking, creative invention, or
+a mixture of all of these. Most statisticians are happy to do so.
+One downside of this ecumenicalism is a reluctance to ask fundamental
+questions. Having a strong opinion on this matter has gone out of fashion.
+Who's to say one statistical philosophy is better than
+another? Aren't all statistical philosophies {\it equally valid} paths to good
+data analysis? Frequentism is ``true for me''. As in religion, so in statistics.
+If you criticise a colleague for using p-values when posterior probabilities
+are clearly more appropriate will lead to accusations of being a `zealot' who
+should stop `crusading' \citep{simply_statistics}.
+
+\begin{thebibliography}{999} % if there are less than 10 entries, enter a one digit number
+\bibitem[Simply Statistics Blog(2013)]{simply_statistics}
+http://simplystatistics.org/2013/11/26/statistical-zealots/
+
+\end{thebibliography}
 
 
 \end{document}
