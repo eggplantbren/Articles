@@ -44,8 +44,9 @@ you get
 depends on both the experimental result itself, as well as what you assume
 about how plausible all of those hypotheses were {\em before you knew the result
 of the experiment} --- the dreaded `prior'.
-Under default assumptions the `posterior' probability the new drug is better
-than the old one is 0.89, the probability it's the same is 0.11, and the
+Under standard assumptions the `posterior' probability the new drug is better
+than the old one is 0.89, the probability it's the same is 0.11 (starting
+from a prior of 0.5), and the
 probability it's worse is practically zero.
 
 To a `frequentist', there's only one legitimate application of probabilities to
@@ -54,8 +55,8 @@ the real world: to relative frequencies or proportions
 limits because it's too vague to be subject to concrete mathematical rules).
 Think of the joke
 ``84\% of statistics are made up'', or a caricature of a statistician who cares
-about what proportion of Xs are Y. It is true that probability theory works
-here. But how can we apply this to the drug example? We can, but it requires
+about what proportion of $X$s are $Y$. It is true that probability theory works
+here. But can we apply this to the drug example? We can, but it requires
 some imagination.
 The standard method is to imagine repeating the experiment many times.
 If we did this, the number of patients who recovered would
@@ -91,23 +92,33 @@ The Bayesian probability of 0.11 (that the drugs are the same) is a much
 more moderate number. It's quite common for the frequentist's p-value to
 be much closer to zero than the Bayesian's posterior probability.
 So any time you see a scientific paper claiming a result with $p < 0.05$, this
-is {\em nothing like} 95\% certainty that the result is real.
+is {\em nothing like} 95\% certainty that the result is real. This is one
+reason why so many experimental results aren't being reproduced: the evidence
+for them was never strong anyway.
 Good statisticians know this, and try to impress it on their students and
 scientific colleagues. However, a simpler solution exists. If we want to know
-the plausibility of hypotheses, why don't we just calculate that? It's much
-more direct than
+the plausibility of hypotheses, why don't we just calculate that? If you want
+to know $X$, calculate $X$. Don't calculate $Y$ instead, and then complain
+about the people interpreting $Y$ as if it were $X$. It's not their fault.
 
-The 
-
+The main criticism of Bayesian methods is that they're subjective: the results
+depend not just on the data being analysed but also on the other ingredients
+you must supply, the prior probabilities (how plausible were your hypotheses
+before taking into account the data?). It's true these extra assumptions are
+needed, but this is just accepting reality. For example, if we had assumed
+the new drug's effectiveness is probably extremely close to that of the old drug,
+the data would have been uninformative about the question of ``equal or not'',
+and the posterior probability would have equalled the prior probability. This
+is not a problem. It is logic.
 
 Things have improved markedly for Bayesian statisticians over the last few
 decades. These days, you're unlikely to encounter any hostility by doing
-a Bayesian analysis. By far the dominant attitude these days
-is pragmatism. It's possible to do interesting and useful analyses using tools
+a Bayesian analysis. Pragmatism is the most popular attitude.
+It's possible to do interesting and useful analyses using tools
 arising from frequentist thinking, Bayesian thinking, creative invention, or
-a mixture of all of these. Most statisticians are happy to do so.
+a mixture of all of these, and most statisticians are happy to do so.
 One downside of this ecumenicalism is a reluctance to ask fundamental
-questions. Having a strong opinion on this matter has gone out of fashion.
+questions: having a strong opinion on this matter has gone out of fashion.
 Who's to say one statistical philosophy is better than
 another? Aren't all statistical philosophies {\it equally valid} paths to good
 data analysis? Frequentism is ``true for me''. As in religion, so in statistics.
@@ -120,33 +131,35 @@ hypotheses. During the question and answer session, a statistics department coll
 strongly, but it was refreshing to see someone willing to argue for a view.
 
 Another, more consequential downside is a reluctance to abandon bad ideas.
-Frequentist confidence intervals and p-values should still be taught
---- since so much research is based on them, our students need to know what
+Frequentist confidence intervals and p-values should still be taught to some
+extent --- since so much research is based on them, our students need to know what
 they are. Other ideas that arose from frequentism, such as maximum likelihood
 estimation and the notion of `bias', are still useful for obtaining fast
 approximate results and for computational algorithms respectively.
-
 In some difficult research problems they might help if a Bayesian solution is too mathematically or computationally difficult to obtain.
-Yet it is naive and false to claim that we teach these methods because they're
+Yet it is simply false to claim that we teach these methods because they're
 better or easier than Bayesian ones. I would argue they are both worse and
 more difficult. In physics, undergraduate students learn Newton's ideas about
 gravity before Einstein's, because they're much easier conceptually and
-mathematically, and give the right answer on many problems. The only reason
+mathematically, and give the right answer on many problems. If Einstein's theory
+were easier {\em and} worked better, teaching Newton's would be silly. Yet
+that's the way most statistics curricula are structured.
+The only reason
 statisticians think frequentist ideas are easier is that they are used to them.
 The only reason they think Bayesian ideas must wait until graduate school is
-that the accessible textbooks haven't been written (although some easier material
+that the lower-level textbooks haven't been written (although some easier material
 exists such as Allen Downey's book \citep{downey} and my lecture
-notes \citep{331}).
+notes \citep{331}). It's time to change this. Let's teach Bayes first.
 
 \begin{thebibliography}{999} % if there are less than 10 entries, enter a one digit number
 \bibitem[Simply Statistics Blog(2013)]{simply_statistics}
 http://simplystatistics.org/2013/11/26/statistical-zealots/
 
-\bibitem[]{331}
-http://github.com/eggplantbren/STATS331
-
 \bibitem[]{downey}
 http://greenteapress.com/thinkbayes/
+
+\bibitem[]{331}
+http://github.com/eggplantbren/STATS331
 
 \end{thebibliography}
 
