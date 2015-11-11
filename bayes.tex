@@ -35,7 +35,7 @@ successfully treats 70\% of patients. To test a new drug, researchers give it
 to 100 patients, of whom 83 recover. Based on this evidence, how certain
 should we be that the new drug is worse than, identical to, or better than the
 old one? If you think it is legitimate to use the mathematics of probability
-to study the idea of {\em plausibility}, you are a `Bayesian' (after Reverend
+to study {\em plausibility}, you are a `Bayesian' (after Reverend
 Thomas Bayes, one of the first people to use probability this way). Faced with
 this question, your job is to {\em calculate how plausible it is} that the new
 drug is much worse, slightly worse, identical to, slightly better, or much better
@@ -44,7 +44,7 @@ you get
 depends on both the experimental result itself, as well as what you assume
 about how plausible all of those hypotheses were {\em before you knew the result
 of the experiment} --- the dreaded `prior'.
-Under default assumptions the probability the new drug is better
+Under default assumptions the `posterior' probability the new drug is better
 than the old one is 0.89, the probability it's the same is 0.11, and the
 probability it's worse is practically zero.
 
@@ -55,8 +55,9 @@ limits because it's too vague to be subject to concrete mathematical rules).
 Think of the joke
 ``84\% of statistics are made up'', or a caricature of a statistician who cares
 about what proportion of Xs are Y. It is true that probability theory works
-here. But how can we apply this to the drug example?
-The standard method is to imagine repeating the experiment.
+here. But how can we apply this to the drug example? We can, but it requires
+some imagination.
+The standard method is to imagine repeating the experiment many times.
 If we did this, the number of patients who recovered would
 not be 83 every single time. Sometimes we'd just happen to get more patients
 who recover (for whatever reason) and sometimes we'd get less. Interestingly,
@@ -77,15 +78,26 @@ our result was. To ``solve'' this problem, the influential mathematical
 biologist R. A. Fisher suggested calculating the fraction of the time we would
 see this result {\em or one that departs even more from what the null
 hypothesis would predict}. In our case, that's the fraction of the time we'd
-see 83 or more, or 57 or less, recoveries, which is 0.006.
+see 83 or more, or 57 or less recoveries, which is 0.006.
 This quantity is called a p-value.
 An oft-criticised convention is that a p-value less than 0.05 implies evidence
 against the null hypothesis, and our result certainly qualifies.
 
 Look at the numbers produced by the two different methods. The frequentist p-value of 0.006 is much lower than the probability the new drug is the same, 0.11.
-The two quantities are defined and calculated differently, so of course they're
-different. But look how big the difference is. Doesn't 0.006 just {\em feel}
-more compelling? It's so close to zero!
+The two quantities are defined and calculated differently, so {\em of course} they're different. But look how big the difference is.
+Doesn't 0.006 just {\em feel}
+more compelling? It's 6 out of 1000 --- so close to zero!
+The Bayesian probability of 0.11 (that the drugs are the same) is a much
+more moderate number. It's quite common for the frequentist's p-value to
+be much closer to zero than the Bayesian's posterior probability.
+So any time you see a scientific paper claiming a result with $p < 0.05$, this
+is {\em nothing like} 95\% certainty that the result is real.
+Good statisticians know this, and try to impress it on their students and
+scientific colleagues. However, a simpler solution exists. If we want to know
+the plausibility of hypotheses, why don't we just calculate that? It's much
+more direct than
+
+The 
 
 
 Things have improved markedly for Bayesian statisticians over the last few
@@ -110,7 +122,11 @@ strongly, but it was refreshing to see someone willing to argue for a view.
 Another, more consequential downside is a reluctance to abandon bad ideas.
 Frequentist confidence intervals and p-values should still be taught
 --- since so much research is based on them, our students need to know what
-they are. In some difficult research problems they might help if a Bayesian solution is too mathematically or computationally difficult to obtain.
+they are. Other ideas that arose from frequentism, such as maximum likelihood
+estimation and the notion of `bias', are still useful for obtaining fast
+approximate results and for computational algorithms respectively.
+
+In some difficult research problems they might help if a Bayesian solution is too mathematically or computationally difficult to obtain.
 Yet it is naive and false to claim that we teach these methods because they're
 better or easier than Bayesian ones. I would argue they are both worse and
 more difficult. In physics, undergraduate students learn Newton's ideas about
