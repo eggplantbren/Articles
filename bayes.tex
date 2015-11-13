@@ -20,11 +20,11 @@
 \maketitle
 
 What is probability? This sounds like a discussion question for a
-philosophy class, one of those questions it's fun to think about but which
+philosophy class, one of those questions that's fun to think about but that
 doesn't have many practical consequences. Surprisingly, this is not the case.
-It turns out that different answers to this question lead to completely
+As it turns out, different answers to this question lead to completely
 different views of how to do statistics and data analysis {\em in practice}.
-In the early 20th century this led to a split in the field of statistics,
+In the early 20th century, this led to a split in the field of statistics,
 with intense debates taking place about whose methods and ways of thinking
 were better. Unfortunately, the wrong side won the debate and their
 ideas still dominate mainstream statistics, a situation which
@@ -32,7 +32,7 @@ has exacerbated the reproducibility crises affecting science today.
 
 Here's a common, standard statistical inference problem. An old drug
 successfully treats 70\% of patients. To test a new drug, researchers give it
-to 100 patients, of whom 83 recover. Based on this evidence, how certain
+to 100 patients, 83 of whom recover. Based on this evidence, how certain
 should we be that the new drug is worse than, identical to, or better than the
 old one? If you think it is legitimate to use the mathematics of probability
 to study {\em plausibility}, you are a `Bayesian' (after Reverend
@@ -54,8 +54,7 @@ the real world: to relative frequencies or proportions
 (plausibility is off
 limits because it's too vague to be subject to concrete mathematical rules).
 Think of the joke
-``84\% of statistics are made up'', or a caricature of a statistician who cares
-about what proportion of $X$s are $Y$. It is true that probability theory works
+``84\% of statistics are made up''. It is true that probability theory works
 here. But can we apply this to the drug example? We can, but it requires
 some imagination.
 The standard method is to imagine repeating the experiment many times.
@@ -71,18 +70,20 @@ that hypothesis. We just need to figure out how to quantify how unusual our
 result is.
 
 For example, consider the `null' hypothesis that the new drug
-has the same effectiveness as the old drug. Then, under standard assumptions we'd
-observe 83 recoveries about 0.0012 of the time. This is pretty small, and in
-general any actual experimental result is so specific it would hardly
-ever be observed again, so this can't be a good way of quantifying how unusual
-our result was. To ``solve'' this problem, the influential mathematical
+has exactly the same effectiveness as the old drug. Then, under standard assumptions we'd
+typically observe about 70 or so of the patients recovering. The fraction of
+the time we'd observe 83 recoveries (our actual result) is 0.0012. This number is pretty small, and in
+general, any actual experimental result is so specific it would hardly
+ever be observed again. Therefore, 0.0012 can't be a good way of quantifying how unusual
+our result is. To ``solve'' this problem, the influential mathematical
 biologist R. A. Fisher suggested calculating the fraction of the time we would
-see this result {\em or one that departs even more from what the null
-hypothesis would predict}. In our case, that's the fraction of the time we'd
+see our exact result {\em or one that's even more different from what the null
+hypothesis would predict}. In our case, we need the fraction of the time we'd
 see 83 or more, or 57 or less recoveries, which is 0.006.
 This quantity is called a p-value.
 An oft-criticised convention is that a p-value less than 0.05 implies evidence
-against the null hypothesis, and our result certainly qualifies.
+against the null hypothesis, and our result of 0.006 certainly qualifies
+as such.
 
 Look at the numbers produced by the two different methods. The frequentist p-value of 0.006 is much lower than the probability the new drug is the same, 0.11.
 The two quantities are defined and calculated differently, so {\em of course} they're different. But look how big the difference is.
@@ -93,19 +94,20 @@ more moderate number. It's quite common for the frequentist's p-value to
 be much closer to zero than the Bayesian's posterior probability.
 So any time you see a scientific paper claiming a result with $p < 0.05$, this
 is {\em nothing like} 95\% certainty that the result is real. This is one
-reason why so many experimental results aren't being reproduced: the evidence
+reason why so many experimental results aren't being reproduced; the evidence
 for them was never strong anyway. In fact many studies reporting $p < 0.05$
 may actually have found evidence {\em in favour} of the null hypothesis, meaning
 a ``failed'' replication attempt is actually a success!
 Good statisticians know that p-values and posterior probabilities are not the
-same thing, and try to impress it on their students and
+same thing, and try to impress it upon their students and
 scientific colleagues, often without much success.
 However, a simpler solution exists. If we want to know
-the plausibility of hypotheses, why don't we just calculate that? If you want
-to know $X$, calculate $X$. Don't calculate $Y$ instead, and then complain
-about the people interpreting $Y$ as if it were $X$. It's not their fault.
+the plausibility of a hypothesis, why don't we just calculate it? If you want
+to know $X$, calculate $X$. Don't calculate $Y$ instead, try to use it for
+insight about $X$, and then complain
+about all the people interpreting $Y$ as if it were $X$. It's not their fault.
 
-The main criticism of Bayesian methods is that they're subjective: the results
+The main criticism of Bayesian methods is that they're subjective; the results
 depend not just on the data being analysed but also on the other ingredients
 you must supply, the prior probabilities (how plausible were your hypotheses
 before taking into account the data?). It's true these extra assumptions are
@@ -127,7 +129,7 @@ Who's to say one statistical philosophy is better than
 another? Aren't all statistical philosophies {\it equally valid} paths to good
 data analysis? Frequentism is ``true for me''. As in religion, so in statistics.
 If you criticise a colleague for using p-values when posterior probabilities
-are clearly more appropriate will lead to accusations of being a `zealot'
+are clearly more appropriate, it will lead to accusations of being a `zealot'
 \citep{simply_statistics} who should stop `crusading'.
 A year ago I went to a talk by prominent `skeptic' Steven Novella, in which
 he advocated for a Bayesian approach to judging the plausibility of medical
@@ -136,7 +138,7 @@ strongly, but it was refreshing to see someone willing to argue for a view.
 
 Another, more consequential downside is a reluctance to abandon bad ideas.
 Frequentist confidence intervals and p-values should still be taught to some
-extent --- since so much research is based on them, our students need to know what
+extent; since so much research is based on them, our students need to know what
 they are. Other ideas that arose from frequentism, such as maximum likelihood
 estimation and the notion of `bias', are still useful for obtaining fast
 approximate results and for computational algorithms respectively.
@@ -153,7 +155,9 @@ The only reason
 statisticians think frequentist ideas are easier is that they are used to them.
 The only reason they think Bayesian ideas must wait until graduate school is
 that the lower-level textbooks haven't been written (although some easier material
-exists such as Allen Downey's book \citep{downey} and my lecture
+exists, such as the books by Allen Downey \citep{downey} and John Kruschke
+\citep{kruschke},
+and my lecture
 notes \citep{331}). It's time to change this. Let's teach Bayes first.
 
 \begin{thebibliography}{999} % if there are less than 10 entries, enter a one digit number
@@ -162,6 +166,9 @@ http://simplystatistics.org/2013/11/26/statistical-zealots/
 
 \bibitem[]{downey}
 http://greenteapress.com/thinkbayes/
+
+\bibitem[]{kruschke}
+Kruschke, John. Doing Bayesian data analysis: A tutorial introduction with R. Academic Press, 2010.
 
 \bibitem[]{331}
 http://github.com/eggplantbren/STATS331
