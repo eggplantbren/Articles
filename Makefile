@@ -5,4 +5,8 @@ default:
 	pdflatex waking_up
 	pdflatex waking_up
 	pdflatex waking_up
+	pdflatex second_law
+	pdflatex second_law
+	pdflatex second_law
+
 
