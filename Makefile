@@ -1,10 +1,5 @@
 default:
-	pdflatex bayes
-	pdflatex bayes
-	pdflatex bayes
-	pdflatex waking_up
-	pdflatex waking_up
-	pdflatex waking_up
+	gifsicle --unoptimize diffusion.gif | convert - frame-%d.png
 	pdflatex second_law
 	pdflatex second_law
 	pdflatex second_law
