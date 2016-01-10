@@ -13,14 +13,12 @@
 \allsectionsfont{\normalfont\sffamily}
 \parindent=0cm
 
-\title{Unscrambling the second law}
+\title{Unscrambling the second law of thermodynamics}
 \author{Brendon J. Brewer}
 
 \begin{document}
 \sffamily
 \maketitle
-
-\section*{Heat}
 
 The second law of thermodynamics surely qualifies as one of the most
 talked-about principles in all of physics. Depending on who you ask, it is
@@ -122,7 +120,7 @@ temperature. For example,
 why is golf difficult? Why can't most men sing operatic high Cs?
 And why are political polls (somewhat) accurate?
 
-\section*{Uncertainty, volume, and rules of thumb}
+\section*{Uncertainty and volume}
 During my PhD studies, I became intensely interested in Bayesian statistics
 \citep{brewer}
 and how to use it in astronomical data analysis. During this process I
@@ -178,24 +176,31 @@ being non-fiction books, and the red being fiction:
 \includegraphics{bookshelf.png}
 \end{figure}
 Clearly the safest bet is that the signed book is non-fiction, simply because
-there are more of them. A safe bet is, however, not a guarantee.
+there are more of them --- they occupy a large majority of the volume of
+possibilities (which, in this case, corresponds to a physical volume on my
+bookshelf). A safe bet is, however, not a guarantee.
 
-\section*{Rearranging the bookshelf}
 Now, what happens if I rearrange the books in an arbitrary manner? All the books
 will be in a different order, and in terms of fiction vs. non-fiction, the
 latter will still dominate:
-
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale=0.61]{bookshelf2.png}
 \end{figure}
+After this, there's still a 96\% probability the signed book is non-fiction.
+The general principle here, which Jaynes pointed out, is this:
+{\bf If you consider all possibilities that are consistent with
+the information you have, and the vast majority of those possibilities
+imply a certain outcome that is meaningful to you, then that outcome is very
+plausible.}
+
+\section*{Clausius from Jaynes}
+Discuss the Clausius second law as a consequence of the Jaynes one
 
 
-\section*{Shannon}
 
-
-\section*{Entropy: it's not what's happening, it's what you know}
-
+\section*{Entropy is about what is known, not what is there}
+{\bf Write about how the same physical system can have different entropies}
 
 
 I must admit that when I hear `entropy' from a physicist, without a long
