@@ -41,7 +41,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="292.53453"
+     inkscape:cx="326.82024"
      inkscape:cy="825.10807"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -101,12 +101,6 @@
          y="273.82455"
          id="tspan4222"
          style="font-size:12.5px;text-align:center;text-anchor:middle">Cool air</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 226.42857,235.93364 c 0,0 24.25394,-17.17885 37.85715,-22.85714 19.71745,-8.23052 40.79948,-14.72448 62.14285,-15.71429 15.40643,-0.71448 30.53009,4.43943 45.71429,7.14286 13.14781,2.34087 39.28571,7.85714 39.28571,7.85714"
-       id="path4247"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssc" />
     <text
        xml:space="preserve"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -124,5 +118,35 @@
          y="156.06496"
          style="font-size:12.5px;text-align:center;text-anchor:middle"
          id="tspan4268">Slightly warmer air</tspan></text>
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:9, 3;stroke-opacity:1;stroke-dashoffset:0"
+       id="path4151"
+       cx="554.28571"
+       cy="308.43362"
+       rx="65.714287"
+       ry="23.928572" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 226.42857,235.93364 c 0,0 24.25394,-17.17885 37.85715,-22.85714 19.71745,-8.23052 40.79948,-14.72448 62.14285,-15.71429 15.40643,-0.71448 30.53009,4.43943 45.71429,7.14286 13.14781,2.34087 39.28571,7.85714 39.28571,7.85714"
+       id="path4247"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssc" />
+    <text
+       xml:space="preserve"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       x="554.84766"
+       y="306.36221"
+       id="text4165"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4167"
+         x="554.84766"
+         y="306.36221"
+         style="font-size:10px;text-align:center;text-anchor:middle">Would lead back to</tspan><tspan
+         sodipodi:role="line"
+         x="554.84766"
+         y="318.86221"
+         id="tspan4169"
+         style="font-size:10px;text-align:center;text-anchor:middle">hot coffee and cool air</tspan></text>
   </g>
 </svg>
