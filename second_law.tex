@@ -208,22 +208,23 @@ some reason to assign high probabilities to the two fiction books.
 \section*{Clausius from Jaynes}
 %Discuss the Clausius second law as a consequence of the Jaynes one
 The Gibbs/Jaynes version of the second law can be applied to all sorts of
-questions, and it can also explain why the Clausius version is true. 
+questions, and it can also explain why the Clausius version, about heat and
+temperature, is true. 
 
 When I say that I have a hot cup of coffee and that the air around it is cooler,
 it seems like quite a specific statement. But in a certain sense it is actually
 a very vague statement, in that it leaves out a large number of details about
 what's actually happening. I didn't tell you the colour of the mug, whether
 my window was open, whether the coffee was instant or not (usually instant with
-soy milk and two pills of sucralose if you're wondering...I can handle the hate mail). More conventionally, it also left out details about the position and
+soy milk and two pills of sucralose if you're wondering...I can handle the hate mail). More conventionally, it also left out a huge number of details about the position and
 velocity (speed and direction of movement) of every molecule in the mug and
-the surrounding air. Not entirely: the high temperature of the coffee means its
-molecules are moving fairly rapidly.
+the surrounding air. The the high temperature of the coffee means its
+molecules are moving fairly rapidly, but there's precious little information
+apart from that.
 
 Based on this very vague information about the cup of coffee, can we predict
 what will happen in the future? Our common sense and experience say yes, very
 loudly. Hot cups of coffee cool down. Duh!
-
 But to a physicist the standard way of predicting the future is to use
 the laws of motion, which predict how particles (such as molecules of coffee
 and air) will move around. The catch is that we need to give the {\it initial
@@ -234,41 +235,65 @@ Since we don't know the initial conditions (we only have the `vague' information
 about the temperature) we can't actually apply the standard laws of motion to
 see what will happen in the future. Any prediction we make will be a
 guess, or more formally, a probability. We're in a situation analogous to the
-bookshelf one.
+bookshelf one. 
 
-\begin{figure}
+If we think of all possibilities for what the positions and velocities of the
+coffee and air molecules might be, the vague information we have
+can only restrict the possibilities down to a subset, shown as the red area
+below:
+
+\begin{figure}[ht!]
 \centering
 \includegraphics[scale=0.6]{diagrams.png}
 \end{figure}
 
-Interestingly, this explanation doesn't really explain much about time,
-since notions of time were assumed in the explanation itself.
+Now, what the laws of motion will do for you is tell you how a point in this
+diagram will move around over time
+(equivalently, how the positions and velocities of all the molecules will
+move over time). For an actual situation, at a particular instant, the physical
+reality is represented by a single point somewhere in the red zone. As time
+goes on, that point will move around (as depicted by the curved arrow in
+the diagram). Where will it end up? That depends on precisely where in the
+red zone the point was initially.
+
+However, notice that the red zone is much smaller than the 
 
 
 
-\section*{Entropy is about what is known, not what is there}
-%{\textsf \textbf Write about how the same physical system can have different entropies}
-
-
-I must admit that when I hear `entropy' from a physicist, without a long
-set of qualifications, I don't know what they're talking about. You can listen
-to a whole talk full of statements like ``the entropy of the universe was
-low in the past''. I don't know what that means,
+I must admit that when I hear `entropy' from a physicist without a long
+set of qualifications, I don't know what they're talking about. Most will
+happily talk about ``the entropy of the universe'' being low in the past,
+or how Stephen Hawking derived the ``entropy of a black hole''.
+I don't know what these statements mean,
 and I don't think it's entirely my fault.
 There seems to be little recognition of the fact
 that the {\em exact same physical system}
 can have more than one entropy, depending on how we want to think about it.
+Entropy describes what is known about a system, or how much information a
+vague statement provides about the system. There is no `true' entropy that
+we could calculate {\bf even if we knew everything that there was to be known!}
 What {\em rules of thumb} are we looking for? Different ones may exist, and
 we'll find them by using different entropies.
+
+Interestingly, this explanation doesn't really explain anything about time,
+since notions of time were assumed in the explanation itself. Presumably,
+a more fundamental explanation for time would explain it in terms of some
+other concepts.
+
+\section*{Entropy is about what is known, not what is there}
+%{\textsf \textbf Write about how the same physical system can have different entropies}
 
 It's worth thinking about whether the second law really does forbid evolution
 by natural selection. We don't need to get particularly technical with the
 concept of entropy in order to have a go at that. All we need to ask is whether
 it's plausible that a population of self-replicating organisms will tend to
-`improve' their survival and reproduction abilities over time.
-The answer is yes \citep{mackay}, provided the mutation rate is sufficiently
+`improve' their survival and reproductive `fitness' over time.
+The answer is yes, provided the mutation rate is sufficiently
 low. And if the organisms reproduce sexually, the population's average fitness
-will increase even faster.
+will increase even faster \citep{mackay}. This isn't the Clausius version of
+the second law, but an example of the Jaynes one: of all the possible deaths,
+reproduction events, and mutations that could plausibly occur, most would lead to
+an increase in the average fitness of the population.
 
 \section*{The second law in ordinary life}
 As promised, the more general second law can be applied to everyday questions.
@@ -284,40 +309,39 @@ achieved in the larynx, regarding air pressure and so on. To get this right,
 you need to apply muscular effort in your torso in a particular way that singers
 traditionally call support \citep{cvt}. You also can't be quiet unless you want
 a very gentle ``falsetto'' sound. The volume required is more than most people
-would feel (socially) comfortable attempting.
+would intuitively feel is necessary. For example, I can't sing high-pitched
+rock songs while my wife is in the same room because it hurts her ears.
+
 
 \begin{thebibliography}{999} % if there are less than 10 entries, enter a one digit number
-\bibitem[]{brewer} The Great Statistical Schism. Quillette, 2015.
-http://quillette.com/2015/11/13/the-great-statistical-schism/
-
 \bibitem[]{carroll}
 Carroll, Sean. From eternity to here: the quest for the ultimate theory of time. Penguin, 2010.
 
-\bibitem[]{cvt}
-Sadolin, Cathrine. Complete Vocal Technique.
+\bibitem[]{muse}
+Muse. The 2nd law.
+http://www.allmusic.com/album/the-2nd-law-mw0002406726
 
 \bibitem[]{dawkins}
 Dawkins, Richard. The blind watchmaker: Why the evidence of evolution reveals a universe without design. WW Norton \& Company, 1986.
 
-\bibitem[]{dawkins2}
-Dawkins, Richard. The information challenge.
-http://www.skeptics.com.au/resources/articles/the-information-challenge/
+\bibitem[]{brewer} The Great Statistical Schism. Quillette, 2015.
+http://quillette.com/2015/11/13/the-great-statistical-schism/
+
+\bibitem[]{jaynes_site}
+http://bayes.wustl.edu/
 
 \bibitem[]{jaynes}
 Jaynes, Edwin T.
 Gibbs vs Boltzmann entropies. American Journal of Physics 33.5 (1965): 391-398.
 
-\bibitem[]{jaynes_site}
-http://bayes.wustl.edu/
+\bibitem[]{cvt}
+Sadolin, Cathrine. Complete Vocal Technique.
 
 \bibitem[]{mackay}
 David MacKay, Information Theory, Inference, and Learning Algorithms.
 Chapter 19.
 http://www.inference.phy.cam.ac.uk/mackay/itprnn/ps/265.280.pdf
 
-\bibitem[]{muse}
-Muse. The 2nd law.
-http://www.allmusic.com/album/the-2nd-law-mw0002406726
 \end{thebibliography}
 
 \end{document}
